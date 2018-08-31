@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+  Copyright 2004 The Apache Software Foundation
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+    version="2.4">
+
+  <display-name>Welcome to Tomcat</display-name>
+  <description>
+     Welcome to Tomcat
+  </description>
+
+			<!-- MAPPING STARTS HERE -->
+
+  <servlet>
+         <servlet-name>AdminLogin</servlet-name>
+         <servlet-class>AdminLogin</servlet-class>
+</servlet>
+<servlet-mapping>
+                 <servlet-name>AdminLogin</servlet-name>
+                 <url-pattern>/AdminLoginService</url-pattern>
+</servlet-mapping>
+
+  <servlet>
+         <servlet-name>AddNewSubject</servlet-name>
+         <servlet-class>AddNewSubject</servlet-class>
+</servlet>
+<servlet-mapping>
+                 <servlet-name>AddNewSubject</servlet-name>
+                 <url-pattern>/AddNewSubjectService</url-pattern>
+</servlet-mapping>
+
+  <servlet>
+         <servlet-name>DeleteSubject</servlet-name>
+         <servlet-class>DeleteSubject</servlet-class>
+</servlet>
+<servlet-mapping>
+                 <servlet-name>DeleteSubject</servlet-name>
+                 <url-pattern>/DeleteSubjectService</url-pattern>
+</servlet-mapping>
+
+<servlet>
+         <servlet-name>DeleteSubject1</servlet-name>
+         <servlet-class>DeleteSubject1</servlet-class>
+</servlet>
+<servlet-mapping>
+                 <servlet-name>DeleteSubject1</servlet-name>
+                 <url-pattern>/DeleteSubject1Service</url-pattern>
+</servlet-mapping>
+
+    <servlet>
+         <servlet-name>ChangePassword</servlet-name>
+         <servlet-class>ChangePassword</servlet-class>
+</servlet>
+<servlet-mapping>
+                 <servlet-name>ChangePassword</servlet-name>
+                 <url-pattern>/ChangePasswordService</url-pattern>
+</servlet-mapping>
+
+  <servlet>
+         <servlet-name>FacultyLogin</servlet-name>
+         <servlet-class>FacultyLogin</servlet-class>
+</servlet>
+<servlet-mapping>
+                 <servlet-name>FacultyLogin</servlet-name>
+                 <url-pattern>/FacultyLoginService</url-pattern>
+</servlet-mapping>
+
+<servlet>
+         <servlet-name>FacultyRegister</servlet-name>
+         <servlet-class>FacultyRegister</servlet-class>
+</servlet>
+<servlet-mapping>
+                 <servlet-name>FacultyRegister</servlet-name>
+                 <url-pattern>/FacultyRegisterService</url-pattern>
+</servlet-mapping>
+
+<servlet>
+         <servlet-name>FacultySubjectSelection</servlet-name>
+         <servlet-class>FacultySubjectSelection</servlet-class>
+</servlet>
+<servlet-mapping>
+                 <servlet-name>FacultySubjectSelection</servlet-name>
+                 <url-pattern>/FacultySubjectSelectionService</url-pattern>
+</servlet-mapping>
+
+  <servlet>
+         <servlet-name>FacultyReplay</servlet-name>
+         <servlet-class>FacultyReplay</servlet-class>
+</servlet>
+<servlet-mapping>
+                 <servlet-name>FacultyReplay</servlet-name>
+                 <url-pattern>/FacultyReplayService</url-pattern>
+</servlet-mapping>
+
+  <servlet>
+         <servlet-name>FacultyReplayFinal</servlet-name>
+         <servlet-class>FacultyReplayFinal</servlet-class>
+</servlet>
+<servlet-mapping>
+                 <servlet-name>FacultyReplayFinal</servlet-name>
+                 <url-pattern>/FacultyReplayFinalService</url-pattern>
+</servlet-mapping>
+
+<servlet>
+         <servlet-name>StudentLogin</servlet-name>
+         <servlet-class>StudentLogin</servlet-class>
+</servlet>
+<servlet-mapping>
+                 <servlet-name>StudentLogin</servlet-name>
+                 <url-pattern>/StudentLoginService</url-pattern>
+</servlet-mapping>
+
+<servlet>
+         <servlet-name>StudentRegister</servlet-name>
+         <servlet-class>StudentRegister</servlet-class>
+</servlet>
+<servlet-mapping>
+                 <servlet-name>StudentRegister</servlet-name>
+                 <url-pattern>/StudentRegisterService</url-pattern>
+</servlet-mapping>
+
+<servlet>
+         <servlet-name>StudentSemesterSelection</servlet-name>
+         <servlet-class>StudentSemesterSelection</servlet-class>
+</servlet>
+<servlet-mapping>
+                 <servlet-name>StudentSemesterSelection</servlet-name>
+                 <url-pattern>/StudentSemesterSelectionService</url-pattern>
+</servlet-mapping>
+
+<servlet>
+         <servlet-name>StudentSubjectSelection</servlet-name>
+         <servlet-class>StudentSubjectSelection</servlet-class>
+</servlet>
+<servlet-mapping>
+                 <servlet-name>StudentSubjectSelection</servlet-name>
+                 <url-pattern>/StudentSubjectSelectionService</url-pattern>
+</servlet-mapping>
+
+<servlet>
+         <servlet-name>StudentFacultySelection</servlet-name>
+         <servlet-class>StudentFacultySelection</servlet-class>
+</servlet>
+<servlet-mapping>
+                 <servlet-name>StudentFacultySelection</servlet-name>
+                 <url-pattern>/StudentFacultySelectionService</url-pattern>
+</servlet-mapping>
+
+<servlet>
+         <servlet-name>StudentFinal</servlet-name>
+         <servlet-class>StudentFinal</servlet-class>
+</servlet>
+<servlet-mapping>
+                 <servlet-name>StudentFinal</servlet-name>
+                 <url-pattern>/StudentFinalService</url-pattern>
+</servlet-mapping>
+
+<servlet>
+         <servlet-name>StudentViewReplay</servlet-name>
+         <servlet-class>StudentViewReplay</servlet-class>
+</servlet>
+<servlet-mapping>
+                 <servlet-name>StudentViewReplay</servlet-name>
+                 <url-pattern>/StudentViewReplayService</url-pattern>
+</servlet-mapping>
+
+</web-app>

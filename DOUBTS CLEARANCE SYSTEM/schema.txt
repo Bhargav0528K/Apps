@@ -1,0 +1,41 @@
+create table studentregister(rollno varchar(10) primary key,branch varchar(10),username varchar(20),password varchar(20));
+
+create table subjects(subjectname varchar(30),subjectcode varchar(10) primary key,branch varchar(10),semester varchar(10));
+
+insert into subjects values('INFORMATION SECURITY','T223','cse','seventh');
+
+insert into subjects values('DMDW','T152','cse','seventh');
+
+insert into subjects values('MOBILE COMMUNICTAIONS','T258','cse','seventh');
+
+insert into subjects values('SOFTWARE PROJECT MANAGEMENT','T310','cse','seventh');
+
+insert into subjects values('ADVANCE COMPUTER ARCHITECTURE','T101','cse','seventh');
+
+insert into subjects values('ARTIFICIAL INTELLIGENCE','T122','cse','seventh');
+
+create table faculty_db(fid varchar(10) primary key,facultyname varchar(30),branch varchar(10),username varchar(20),password varchar(20));
+
+create table faculty_exp(facultyid varchar(10),subjectcode varchar(10),branch varchar(10));
+
+alter table faculty_exp add constraint FK_FID foreign key(facultyid) references faculty_db(fid) ON DELETE CASCADE;
+
+alter table faculty_exp add constraint FK_SUBCODE foreign key(subjectcode) references subjects(subjectcode) ON DELETE CASCADE;
+
+create table doubts(facultyid varchar(10),rollno varchar(10),subjectcode varchar(10),branch varchar(10),question varchar(1000),answer varchar(3000));
+
+alter table doubts add constraint FK_FID_doubts foreign key(facultyid) references faculty_db(fid) ON DELETE CASCADE;
+
+alter table doubts add constraint FK_ROLLNO_doubts foreign key(rollno) references studentregister(rollno) ON DELETE CASCADE;
+
+alter table doubts add constraint FK_SUBCODE_doubts foreign key(subjectcode) references subjects(subjectcode) ON DELETE CASCADE;
+
+desc subjects;
+
+desc studentregister;
+
+desc faculty_db;
+
+desc faculty_exp;
+
+desc doubts;
